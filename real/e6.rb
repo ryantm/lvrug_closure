@@ -6,11 +6,11 @@ counter = proc {
   my_number += 1
 }
 
-def caller(&callee)
+def caller(callee)
   callee.call
 end
 
-caller(&counter)
-caller(&counter)
-caller(&counter)
+caller(counter)
+caller(counter)
+caller(counter)
 puts my_number
